@@ -9,6 +9,7 @@ void	print_bits(unsigned char octet)
 
 int main ()
 {
-	unsigned char a = 2;
+	unsigned char a = 150;
 	print_bits(a);
 }
+
