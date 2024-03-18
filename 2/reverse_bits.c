@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+void	reverse_bits(unsigned char octet)
+{
+	unsigned int i = 8;
+	while (i--)
+		(octet >> i & 1) ? write(1, "0", 1) : write(1, "1", 1);
+}
+
+int main ()
+{
+	unsigned char a = 12;
+	printf("%c", reverse_bits(a));
+}
