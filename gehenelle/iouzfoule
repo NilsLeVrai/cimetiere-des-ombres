@@ -6,5 +6,5 @@ gcc -Wall -Werror -Wextra -D BUFFER_SIZE=42 maingnl.c get_next_line.c get_next_l
 gcc -Wall -Werror -Wextra -D BUFFER_SIZE=100000000 maingnl.c get_next_line.c get_next_line_utils.c && ./a.out | cat -e
 
 norminette
-valgrind ./a.out
+valgrind --leak-check=full --show-leak-kinds=all ./a.out
 funcheck ./a.out
